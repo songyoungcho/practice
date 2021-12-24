@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Basic</title>
+    <script src="http://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            //이벤트 연결
+            $('a').click(function(event){
+                alert('click');
+
+                //기본이벤트 제거
+                event.preventDefault();
+            });
+        });
+    </script>
+</head>
+<body>
+    <a href="http://naver.com">naver</a>
+</body>
+</html>
